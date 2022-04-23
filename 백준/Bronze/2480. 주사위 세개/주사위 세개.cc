@@ -1,6 +1,6 @@
 #include <stdio.h>
-//매크로함수 정의
-#define max(x,y) ((x)>(y)?(x):(y))
+#include <algorithm>
+using namespace std;
 
 int main(){
     int a,b,c;
