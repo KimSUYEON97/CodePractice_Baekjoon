@@ -1,9 +1,9 @@
 #include <stdio.h>
-void Hansu(int n){
+int Hansu(int n){
     int a,b,c,cnt = 99;
     
     if (n<100){
-        printf("%d",n);
+        return n;
     }
     else{
         for (int i=100;i<=n;i++){
@@ -15,12 +15,12 @@ void Hansu(int n){
                 cnt++;
             }
         }
-        printf("%d",cnt);
+        return cnt;
     }
 }
 int main(){
     int n;
     scanf("%d",&n);
-    Hansu(n);
+    printf("%d",Hansu(n));
     return 0;
 }
